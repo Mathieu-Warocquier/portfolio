@@ -66,7 +66,7 @@ nav {
 }
 
 .navigation {
-  width: 40%;
+  width: 65%;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -215,7 +215,7 @@ nav {
 .contenu p {
   width: 100%;
   height: 80%;
-  font-size: 1em;
+  font-size: 1vw;
   font-family: var(--texte);
   color: var(--white);
   line-height: 1.8em;
@@ -309,7 +309,6 @@ nav {
 
 .overlay:hover {
   opacity: 1;
-  cursor: not-allowed;
 }
 
 .portfolio {
@@ -364,4 +363,44 @@ footer p {
 
 .fa-heart {
   color: var(--green);
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+
+  *, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    /* background-color: #3bba78; */
+
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description-links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contenu {
+    width: 100%;
+    height: auto;
+    background: #3bba78;
+  }
+
+  .cont {
+    height: 100%;
+    width: 100%;
+  }
 }
