@@ -75,7 +75,7 @@ nav {
 .nav-item {
   font-family: var(--titre);
   font-size: 20px;
-  color: var(--white);
+  color: var(--blue);
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -214,7 +214,32 @@ nav {
 }
 
 .contenu p a:hover {
-  color: var(--belge);
+  color: var(--green);
+}
+
+/* link déroulant */
+
+.about-me {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0px 15px;
+  display: none;
+}
+
+.stacks {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0px 15px;
+}
+
+.stacks h1 {
+  width: 210px;
 }
 
 /* Footer ----------------- */
