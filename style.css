@@ -236,11 +236,94 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0px 15px;
+  display: none;
 }
 
 .stacks h1 {
   width: 210px;
 }
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 120px;
+  padding-top: 10px;
+  /* background: #3bba78; */
+}
+
+.stack img {
+  width: 60px;
+  height: 60px;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover img {
+  opacity: 0.2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--belge);
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  text-shadow: 1px 1px 3px var(--green);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: all 200ms linear;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.portfolio {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0px 15px;
+}
+
+.portfolio h1 {
+  width: 350px;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 120px;
+  padding-top: 10px;
+  /* background: #3bba78; */
+}
+
 
 /* Footer ----------------- */
 
