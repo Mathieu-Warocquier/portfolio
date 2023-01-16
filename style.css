@@ -215,7 +215,7 @@ nav {
 .contenu p {
   width: 100%;
   height: 80%;
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-family: var(--texte);
   color: var(--white);
   line-height: 1.8em;
@@ -223,8 +223,8 @@ nav {
   padding-top: 10px;
 }
 
-.contenu .p-link {
-  text-indent: 25px;
+.cont .p-link {
+  padding: 0px 25px;
 }
 
 .contenu p a {
@@ -371,36 +371,64 @@ footer p {
 
 @media screen and (max-width: 850px) {
 
-  *, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  body {
+    height: 180vh;
   }
 
   .content {
-    flex-direction: column-reverse;
-    /* background-color: #3bba78; */
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .description {
     width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description img {
+    width: 250px;
+    height: auto;
   }
 
   .description-links {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .description-links .icon {
+    margin: 15px 0px;
   }
 
   .contenu {
     width: 100%;
-    height: auto;
-    background: #3bba78;
+    height: 600px;
+    margin-top: 25px;
+  }
+
+  .contenu p {
+    padding: 0;
+    line-height: 1.5em;
+    font-size: 17px;
+    padding-top: 10px;
+  }
+
+  .stack {
+    padding: 0;
+  }
+
+  .projets {
+    padding: 0;
   }
 
   .cont {
     height: 100%;
     width: 100%;
+    justify-content: flex-start;
   }
 }
