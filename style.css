@@ -197,7 +197,7 @@ nav {
   font-size: 1em;
   font-family: var(--texte);
   color: var(--white);
-  line-height: 2em;
+  line-height: 1.8em;
   padding-left: 90px;
   padding-top: 10px;
 }
