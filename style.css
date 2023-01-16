@@ -28,6 +28,21 @@ body {
   display: flex;
   flex-direction: column;
   font-size: var(--texte);
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 300;
+  width: 300px;
+  height: 90vh;
+  background: #b6d4d633;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+  border-bottom: 10px solid;
+  border-image: linear-gradient(to right, #3bba78, #b6d4d6) 1;
 }
 
 /* Nav ----------------- */
@@ -114,6 +129,7 @@ nav {
   height: auto;
   border-radius: 150px 150px 150px 150px;
   border: 15px solid #f5d9af90;
+  position: relative;
 }
 
 .description-links {
@@ -186,6 +202,10 @@ nav {
   padding-top: 10px;
 }
 
+.contenu .p-link {
+  text-indent: 25px;
+}
+
 .contenu p a {
   text-decoration: none;
   font-weight: bold;
@@ -214,5 +234,5 @@ footer p {
 }
 
 .fa-heart {
-  color: #D23333;
+  color: var(--green);
 }
