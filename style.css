@@ -140,9 +140,9 @@ nav {
   padding: 0px 20px;
 }
 
-.description-links .fab {
+.description-links .icon {
   color: var(--white);
-  margin: 10px 0px;
+  margin: 3px 0px;
   font-size: 1.5em;
   background: #f5d9af90;
   padding: 7px 7px;
@@ -150,7 +150,7 @@ nav {
   transition: all 200ms linear;
 }
 
-.description-links .fab:hover {
+.description-links .icon:hover {
   opacity: 0.7;
   background: var(--green);
 }
