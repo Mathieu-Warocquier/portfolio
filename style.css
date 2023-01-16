@@ -332,7 +332,6 @@ nav {
 .projets {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   column-gap: 15px;
   row-gap: 15px;
   justify-items: center;
@@ -356,17 +355,20 @@ footer {
   justify-content: flex-end;
 }
 
+.p-footer {
+  display: flex;
+  width: 450px;
+  justify-content: space-around;
+}
+
 footer p {
   font-family: var(--texte);
   color: var(--white)
 }
 
-.fa-heart {
+.fa-location-dot, .fa-phone {
   color: var(--green);
 }
-
-
-
 
 
 @media screen and (max-width: 850px) {
@@ -430,5 +432,14 @@ footer p {
     height: 100%;
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .p-footer {
+    width: 100%;
+  }
+
+  body::before {
+    height: 70vh;
+    left: 150;
   }
 }
