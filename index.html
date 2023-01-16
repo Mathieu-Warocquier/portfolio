@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Portfolio</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
   <nav>
     <span class="logo">MW</span>
     <ul class="navigation">
-      <li class="nav-item">About Me</li>
-      <li class="nav-item">Stacks</li>
-      <li class="nav-item">Portfolio</li>
+      <li class="onglets active" data-anim="1">About Me</li>
+      <li class="onglets" data-anim="2">Stacks</li>
+      <li class="onglets" data-anim="3">Portfolio</li>
     </ul>
   </nav>
 
@@ -30,7 +31,7 @@
     </div>
 
     <div class="contenu">
-      <div class="about-me">
+      <div class="cont about-me activeContenu" data-anim="1">
         <h1>About Me</h1>
         <p>Hello 👋, je m'appelle Mathieu Warocquier. <br>Après 7 ans d'expérience en tant qu'Educateur Spécialisé, j'ai décidé de me lancer dans une nouvelle aventure professionnelle afin de devenir développeur web 🚀.
           Diplômé du Wagon en décembre 2022, j'ai pu y développer des compétences en back end (Ruby on Rails) et front end (HTML, CSS, JS).
@@ -43,7 +44,7 @@
           <p>Passionné de front, je souhaite désormais m'y spécialiser et continuer à apprendre (autoformation en cours sur ReactJS) !</p>
       </div>
 
-      <div class="stacks">
+      <div class="cont stacks" data-anim="2">
         <h1>Stacks</h1>
        <div class="stack">
           <figure class="card">
@@ -125,7 +126,7 @@
        </div>
       </div>
 
-      <div class="portfolio">
+      <div class="cont portfolio" data-anim="3">
         <h1>PORTFOLIO</h1>
         <div class="projets">
           <a href="http://www.laccroche.me/" title="laccroche" target="_blank">
@@ -173,6 +174,6 @@
   <footer>
     <p>This footer is made with <i class="fa-solid fa-heart"></i> at Le Wagon</p>
   </footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
