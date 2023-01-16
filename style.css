@@ -76,7 +76,7 @@ nav {
   height: 100%;
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
 }
@@ -93,7 +93,7 @@ nav {
   padding: 15px 0px;
 }
 
-img {
+.description img {
   width: 70%;
   height: auto;
   border-radius: 150px 150px 150px 150px;
@@ -128,10 +128,30 @@ img {
 /* Cotenu - About Me ... ----------------- */
 
 .contenu {
-  width: 70%;
-  height: 80%;
-  background: #f5d9af;
+  width: 60%;
+  height: 90%;
+  /* background: #3bba78; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0px 15px;
+}
 
+.contenu h1 {
+  font-family: var(--titre1);
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--belge);
+
+}
+
+.contenu p {
+  width: 80%;
+  height: 80%;
+  font-size: 1em;
+  font-family: var(--texte);
+  color: var(--white);
+  line-height: 2em;
 }
 
 /* Footer ----------------- */
